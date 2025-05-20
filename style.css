@@ -1,72 +1,104 @@
+/* General body styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
-  
-  header {
-    background-color: #1e1e1e;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  p {
-    margin: 10px 0 0;
-  }
-  
-  #projects {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  #projects h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    color: #111;
-  }
-  
-  .project-card {
-    background-color: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .project-card h3 {
-    margin-top: 0;
-    color: #444;
-  }
-  
-  .project-card a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-  }
-  
-  .project-card a:hover {
-    text-decoration: underline;
-  }
-  
-  footer {
-    background-color: #1e1e1e;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-  }
-  
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #007bff;
+}
+
+/* Header */
+header {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 0 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 10px 0 0;
+}
+
+/* Main sections */
+#projects, .about {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+#projects h2,
+.about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #111;
+}
+
+/* Project card */
+.project-card {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #444;
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
